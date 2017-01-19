@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Search.create!(name: "darth vader")
+Search.create!(name: "princess leia")
+Search.create!(name: "jar jar binks")
+Search.create!(name: "chewbacca")
