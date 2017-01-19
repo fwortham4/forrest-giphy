@@ -7,11 +7,6 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <!-- CSS  -->
-    <%# stylesheet_link_tag "https://fonts.googleapis.com/icon?family=Material+Icons" %>
-
-    <!-- <link href="../assets/stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/> -->
-
     <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -30,7 +25,7 @@
   </head>
 
   <body>
-
+    <%= render '/layouts/nav' %>
 
     <%= yield %>
 
