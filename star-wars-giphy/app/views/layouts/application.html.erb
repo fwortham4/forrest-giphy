@@ -2,10 +2,10 @@
 <html>
   <head>
     <title>Star Wars Giphy</title>
-    <%= csrf_meta_tags %>
+    <%# csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%# javascript_include_tag 'application' %>
 
     <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -36,6 +36,11 @@
         </div>
       </div>
     </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="../assets/js/materialize.js"></script>
+    <script src="../assets/js/init.js"></script>
 
   </body>
 </html>
