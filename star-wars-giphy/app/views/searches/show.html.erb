@@ -1,0 +1,19 @@
+<% @character.each do |character|  %>
+  <% if @character.index(character)%3 == 2 %>
+    <div class="center col s6">
+      <iframe src="<%= character.embed_url %>" frameBorder="0" class="giphy-embed"></iframe>
+    </div>
+  <% end %>
+
+  <% if @character.index(character)%3 == 1 %>
+    <div class="left col s6">
+        <iframe src="<%= character.embed_url %>" frameBorder="0" class="giphy-embed"></iframe>
+    </div>
+  <% end %>
+
+  <% if @character.index(character)%3 == 0 %>
+    <div class="right col s6">
+        <iframe src="<%= character.embed_url %>" frameBorder="0" class="giphy-embed"></iframe>
+    </div>
+  <% end %>
+<% end %>

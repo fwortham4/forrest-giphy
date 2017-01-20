@@ -1,11 +1,19 @@
 <% @results.each do |result|  %>
-<!-- <div class="row"> -->
-<!--   <div class="center-align"> -->
-    <div class="col s12 m7">
-      <div class="card-stacked center hoverable">
+  <% if @results.index(result)%3 == 2 %>
+    <div class="center col s6">
+      <iframe src="<%= result.embed_url %>" frameBorder="0" class="giphy-embed"></iframe>
+    </div>
+  <% end %>
+
+  <% if @results.index(result)%3 == 1 %>
+    <div class="left col s6">
         <iframe src="<%= result.embed_url %>" frameBorder="0" class="giphy-embed"></iframe>
-      </div>
-    <!-- </div> -->
-  </div>
-<!-- </div> -->
+    </div>
+  <% end %>
+
+  <% if @results.index(result)%3 == 0 %>
+    <div class="right col s6">
+        <iframe src="<%= result.embed_url %>" frameBorder="0" class="giphy-embed"></iframe>
+    </div>
+  <% end %>
 <% end %>
