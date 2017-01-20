@@ -3,17 +3,17 @@
       <!-- <a id="logo-container" href="index.html.erb" class="brand-logo">Star Wars GIPHY</a> -->
       <%= link_to 'Star Wars GIPHY', root_path, id: "logo-container", class: "brand-logo" %>
       <ul class="right hide-on-med-and-down">
-        <li><a href="vader.html">Darth Vader</a></li>
-        <li><a href="leia.html">Princess Leia</a></li>
-        <li><a href="binks.html">Jar Jar Binks</a></li>
-        <li><a href="chewy.html">Chewbacca</a></li>
+        <li><%= link_to 'Darth Vader', controller: "searches", action: "show", id: @vader.id %></li>
+        <li><%= link_to 'Princess Leia', controller: "searches", action: "show", id: @leia.id %></li>
+        <li><%= link_to 'Jar Jar Binks', controller: "searches", action: "show", id: @binks.id %></li>
+        <li><%= link_to 'Chewbacca', controller: "searches", action: "show", id: @chewy.id %></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="vader.html">Darth Vader</a></li>
-        <li><a href="leia.html">Princess Leia</a></li>
-        <li><a href="binks.html">Jar Jar Binks</a></li>
-        <li><a href="chewy.html">Chewbacca</a></li>
+        <li><%= link_to 'Darth Vader', controller: "searches", action: "show", id: @vader.id %></li>
+        <li><%= link_to 'Princess Leia', controller: "searches", action: "show", id: @leia.id %></li>
+        <li><%= link_to 'Jar Jar Binks', controller: "searches", action: "show", id: @binks.id %></li>
+        <li><%= link_to 'Chewbacca', controller: "searches", action: "show", id: @chewy.id %></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
